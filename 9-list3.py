@@ -9,3 +9,7 @@ print(selectedNum)
 # some_list[start:end:step] , gives a list
 selectedNumfromList = myNumbers[2:7:1]
 print(selectedNumfromList)
+
+# copy from all of items
+copyAllitem = myNumbers[:]
+print(f'copy of all items: {copyAllitem}')
