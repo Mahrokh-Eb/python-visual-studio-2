@@ -13,3 +13,8 @@ print(selectedNumfromList)
 # copy from all of items
 copyAllitem = myNumbers[:]
 print(f'copy of all items: {copyAllitem}')
+
+# reverse of list
+color = ['red', 'green', 'pink', 'black'] 
+color.reverse()
+print(color)
