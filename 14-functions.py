@@ -25,9 +25,20 @@ print('====================================================================')
 def sum_odd_numbers(numbers):
     sum = 0
     for i in numbers:
-        if i%2 != 0:
+        if i % 2 != 0:
             sum = sum + i
     return sum
 
 numbers = [1,2,3,4,5,6,7] 
 print(f'the sum of odd numbers is: {sum_odd_numbers(numbers)}')
+
+print('====================================================================')
+def check_even_numbers(numbers):
+    total = 0
+    for i in numbers:
+        if i % 2 == 0:
+            total += i
+    return total
+
+print(f'sum of even numbers is: {check_even_numbers(numbers)}')
+
