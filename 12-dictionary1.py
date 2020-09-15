@@ -30,3 +30,15 @@ print(me.keys())
 #print(me['name'])
 for i in me.values():
     print(i)
+
+
+# check if key exist
+if 'goldane' in me:
+    print('yes, there is!')
+else:
+    print('No!')
+
+# second way to check existing value in dict
+existedValue = me.get('surati')
+print(existedValue is None)
+    
