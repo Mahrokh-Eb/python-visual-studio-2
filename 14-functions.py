@@ -42,3 +42,10 @@ def check_even_numbers(numbers):
 
 print(f'sum of even numbers is: {check_even_numbers(numbers)}')
 
+print('====================================================================')
+def exponent(num, power=2): # default
+    return num ** power
+
+print(exponent(2, 2))
+
+
