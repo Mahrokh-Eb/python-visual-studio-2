@@ -15,7 +15,7 @@ def dictionary(**kwargs):
 dictionary(name='Mahi', lastname='Ebrahimi', DOB='September', age= 33, email='mebrahimi@ucla.edu')
 
 print('====================================================================================')
-# the order of the paRameters fo the function
+# the order of the parameters fo the function
 def orderdef(a, b, *args, c = 'defaullf', **kwargs ):
     return[a, b, args, kwargs]
-print(orderdef(1, 2, 3, 4, m='fari' ))
+print(orderdef(1, 2, 3, 4, m='fafarimerriri' ))
