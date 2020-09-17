@@ -19,7 +19,15 @@ print(name, list(uppernames))
 nameFamily = [{'first name ': 'Mona', 'last name': 'goldani'}, 
 {'first name ': 'lona', 'last name': 'laghali'}, 
 {'first name ': 'moryan', 'last name': 'moyalnizadeh'}]
-families = map(lambda i: i ['last name'].upper(), nameFamily)
+
+#using for loop
+families2=[]
+for i in nameFamily:
+    families2.append(i['last name'])
+print(families2)
+
+# using map()
+families = map(lambda i: i ['last name'], nameFamily)
 print(list(families))
 
 
