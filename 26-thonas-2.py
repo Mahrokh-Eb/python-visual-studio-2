@@ -16,8 +16,9 @@ with open('sample_tweets.csv','rt')as f:
 
 
 # looking for the wanted word
-x = re.search( wantedWord, row)
-print(x)
+#x = re.search( wantedWord, row)
+sentences = [word.lower() for word in row if re.match('^[a-zA-Z]+', word)] 
+print(sentences)
 
 
 # if x:
