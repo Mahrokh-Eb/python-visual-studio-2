@@ -4,32 +4,27 @@
 import csv
 import re
 
+
+
+
 # asking user to enter wanted word
-#wantedWord = input('please enter a word that you are looking for! like Ariana : ')
-wantedWord = 'like'
+wantedword = input('please enter a word that you are looking for! like Ariana : ')    #String that you want to search
 
-# opening sample_tweets file
-with open('sample_tweets.csv','rt')as f:
-      data = csv.reader(f)
-      for row in data:
-          print(row)
-
-
-# looking for the wanted word
-#x = re.search( wantedWord, row)
-sentences = [word.lower() for word in row if re.match('^[a-zA-Z]+', word)] 
-print(sentences)
+# first approach
+with open('sample_tweets.csv', 'rt') as f:
+     reader = csv.reader(f, delimiter=',') 
+     for row in reader:
+          for field in row:
+              if field == wantedword:
+                  print("is in file")
 
 
-# if x:
-#   print("YES! We have a match!")
-#   # Create a new file if it does not exist:
-#   f = open("result.txt", "w") # w will overwrite on existing file
-#   f.write('yes we have a match')
-#   f.close() 
-
-# else:
-#   print("No match")
-#   f = open("result.txt", "w") 
-#   f.write('Unfortunately, I see no match')
-#   f.close() 
+# # second approach
+# a='like'     #String that you want to search
+# with open("sample_tweets.csv") as f_obj:
+#     reader = csv.reader(f_obj, delimiter=',')
+#     for line in reader:      #Iterates through the rows of your csv
+#         print(line)          #line here refers to a row in the csv
+#         if a in line:      #If the string you want to search is in the row
+#             print("String found in first row of csv")
+#         break
