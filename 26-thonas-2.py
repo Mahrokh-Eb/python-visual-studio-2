@@ -1,11 +1,8 @@
-# همون فایل text رو بخون ولی نتیجه رو الان فقط داذی میگی بله پیدا شد، یا نه چنین چیزی پیدا نشد
-# . بجای این خطوطی از خط ک پیدا شده رو در ی فایل تکست جدید بعنوان نتیجه بریز
+#Check whether string is in CSV
+
 #import necessary modules
 import csv
 import re
-
-
-
 
 # asking user to enter wanted word
 wantedword = input('please enter a word that you are looking for! like Ariana : ')    #String that you want to search
@@ -28,3 +25,6 @@ with open('sample_tweets.csv', 'rt') as f:
 #         if a in line:      #If the string you want to search is in the row
 #             print("String found in first row of csv")
 #         break
+
+
+# third approach
