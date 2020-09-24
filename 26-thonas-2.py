@@ -44,14 +44,21 @@ import re
 # file.close()
 
 
-# search for a word in cvs file
-import csv
-with open(r'sample_tweets.csv', 'r') as csv_file: 
-    csv_reader = csv.reader(csv_file) 
-    z=0
-    ax=csv_file.read().split()
-    if 'like' in ax:
-        print('found')
-    for line in ax:
-        z+=line.count('and')
-    print(z)
+
+
+# # opening the CSV file 
+# with open('sample_tweets.csv', mode ='r')as file: 
+    
+#   # reading the CSV file 
+#   csvFile = csv.reader(file)  
+# #   # displaying the contents of the CSV file 
+# #   for lines in csvFile: 
+# #         print(lines) 
+  
+# # search for a word in cvs file
+
+import pandas 
+# reading the CSV file 
+csvFile = pandas.read_csv('sample_tweets.csv')  
+# displaying the contents of the CSV file 
+print(csvFile) 
