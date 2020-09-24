@@ -1,4 +1,4 @@
-#Check whether string is in CSV
+#Check whether string is in CSV (sample_tweets.csv) - sample_tweets
 
 #import necessary modules
 import csv
@@ -17,15 +17,14 @@ import re
 
 
 # second approach
-
-a='abc'     #String that you want to search
-with open("testing.csv") as f_obj:
-    reader = csv.reader(f_obj, delimiter=',')
-    for line in reader:      #Iterates through the rows of your csv
-        print(line)          #line here refers to a row in the csv
-        if a in line:      #If the string you want to search is in the row
-            print("String found in first row of csv")
-        break
+# a='bbb'     #String that you want to search
+# with open("sample_tweets.csv") as f_obj:
+#     reader = csv.reader(f_obj, delimiter=',')
+#     for line in reader:      #Iterates through the rows of your csv
+#         print(line)          #line here refers to a row in the csv
+#         if a in line:      #If the string you want to search is in the row
+#             print("String found in first row of csv")
+#         break
 
 
 # # third approach - successfull, read from a csv file and make a txt file and write on it
@@ -43,3 +42,16 @@ with open("testing.csv") as f_obj:
 #         file.write("UPDATE Schema.TableName SET Column1="+str(Id1)+" where Column2="+str(Id)+";\n")
 # #You Must Close the FIle after writing it.
 # file.close()
+
+
+# search for a word in cvs file
+import csv
+with open(r'sample_tweets.csv', 'r') as csv_file: 
+    csv_reader = csv.reader(csv_file) 
+    z=0
+    ax=csv_file.read().split()
+    if 'like' in ax:
+        print('found')
+    for line in ax:
+        z+=line.count('and')
+    print(z)
