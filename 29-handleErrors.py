@@ -8,7 +8,12 @@ except:
 
 #defining a function
 def get(d, key): 
-    return d[key]
+    try:
+        return d[key]
+    except KeyError:
+        return('nemigam, Not Available!')
+    except IndexError:
+        return('index probem')
 
 # defining a dictionary
 person = {
@@ -17,4 +22,11 @@ person = {
     'age': '34'
 }
 print(person['name'], person['lastname']) # mahrokh Ebrahimi
-print(get(person, 'name')) # mahrokh
+print(get(person, 'gol')) # mahrokh
+
+
+# check if user enter int or str
+try:
+    num = int(input('Enter a number: '))
+except:
+    print('that is not a number')
