@@ -1,1 +1,1 @@
-yes we have a match
+yes we have a match:   <re.Match object; span=(9633, 9637), match='like'>
