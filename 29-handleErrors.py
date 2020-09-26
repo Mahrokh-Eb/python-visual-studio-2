@@ -31,3 +31,15 @@ try:
     num = int(input('Enter a number: '))
 except:
     print('that is not a number! ')
+
+# while and try, except, else, finally
+while True:
+    try:
+        num = int(input('Enter an integer for trying try, except, else, finally:  '))
+    except:
+        print('that is Not an integer')
+    else:
+        print('bravo! that is a number.')
+        break
+    finally:
+        print('it shows anyway. ')
