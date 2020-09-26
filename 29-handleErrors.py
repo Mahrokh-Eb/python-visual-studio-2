@@ -15,6 +15,7 @@ def get(d, key):
     except IndexError:
         return('index probem')
 
+
 # defining a dictionary
 person = {
     'name': 'Mahrokh',
@@ -29,4 +30,4 @@ print(get(person, 'gol')) # mahrokh
 try:
     num = int(input('Enter a number: '))
 except:
-    print('that is not a number')
+    print('that is not a number! ')
