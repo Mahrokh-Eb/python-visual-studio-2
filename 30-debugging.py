@@ -5,7 +5,7 @@ pdb.set_trace( )
 number1 = int(input('Ebter num-1: '))
 number2 = int(input('Ebter num-2: '))
 total = number1 + number2
-print(f'the sume of number1 and number2= {total}') 
+print(f'number1 plus number2 = {total}') 
 
 # debugging commands , put in Terminal
 # l -> your command list
