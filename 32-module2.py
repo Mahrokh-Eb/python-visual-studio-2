@@ -18,11 +18,11 @@ from termcolor import colored
 # print(acii_art)
 
 
-# using function to write
-valid_colors = ['red', 'yellow', 'cyan', 'green']
+# using function to write 
+valid_colors = ['red', 'yellow', 'cyan', 'green', 'blue']
 def pyfigletColor(message, color):
     if color not in valid_colors:
-        color = 'blue'
+        color = 'red'
     acii_art = pyfiglet.figlet_format(message)
     acii_art = colored(acii_art, color)
     print(acii_art)
