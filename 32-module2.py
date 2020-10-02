@@ -30,6 +30,7 @@ def pyfigletColor(message, color):
 message = input('What would you like to print? ')
 color = input('what color? ')
 pyfigletColor(message, color)
+print('over!')
 
 
 
